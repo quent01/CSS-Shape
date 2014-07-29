@@ -1,0 +1,368 @@
+/** --------------------------------------------------------------------
+ *  				USEFULL LESS FILE TO BUILD SHAPE
+ *  --------------------------------------------------------------------
+ * 
+ * from : http://www.1stwebdesigner.com/css/create-different-shapes-css/
+ **/
+
+/** --------------------------
+ *  		CIRCLE
+ *  ---------------------------
+ * <div class="circle"></div>
+ **/
+ .circle(
+ 	@width : 120px
+	@bgColor : #7fee1d
+ 	){
+    width: @width;
+    height: @width;
+    background-color: @bgColor;
+    .border-radius(@width);
+}
+
+/** --------------------------
+ *  		SQUARE
+ *  ---------------------------
+ * <div class="square"></div>
+ **/
+.square(
+	@width : 120px,
+	@bgColor : #f447ff
+	){
+	width: @width;
+	height: @height;
+	background-color: @bgColor;
+}
+
+/** --------------------------
+ *  		RECTANGLE
+ *  ---------------------------
+ * <div class="rectangle"></div>
+ **/
+ .rectangle(
+	@width : 220px,
+	@height : 120px,
+	@bgColor : #4da1f7
+ 	){
+	width: @width;
+	height: @height;
+	background-color: @bgColor;
+ }
+
+/** --------------------------
+ *  		OVALE
+ *  ---------------------------
+ * <div class="ovale"></div>
+ **/
+.ovale(
+	@width : 200px,
+	@height : 100px,
+	@bgColor : #e9337c
+	){
+	width: @width;
+	height: @height;
+	.border-radius( @width/@height );
+}
+
+
+ /** --------------------------
+ *  		TRIANGLE
+ *  ---------------------------
+ * <div class="triangle"></div>
+ **/
+ .triangle(
+ 	@width : 140px,
+ 	@height : 140px,
+ 	@bgColor : #fcf921
+ 	){
+	width: 0;
+	height: 0;
+	border-bottom: solid @height @bgColor;
+	border-right: solid (@width/2) transparent;
+	border-left: solid (@width/2) transparent; 
+ }
+
+ /** --------------------------
+ *  		TRIANGLE-DOWN
+ *  ---------------------------
+ * <div class="triangle-down"></div>
+ **/
+ .triangle-down(
+ 	@width : 140px,
+ 	@height : 140px,
+ 	@bgColor : #20a3bf
+ 	){
+	width: 0;
+	height: 0;
+	border-top: solid @height @bgColor;
+	border-right: solid (@width/2) transparent;
+	border-left: solid (@width/2) transparent; 
+ }
+
+
+ /** --------------------------
+ *  		TRIANGLE-LEFT
+ *  ---------------------------
+ * <div class="triangle-left"></div>
+ **/
+ .triangle-left(
+ 	@width : 140px,
+ 	@height : 140px,
+ 	@bgColor : #6bbf20
+ 	){
+	width: 0;
+	height: 0;
+	border-right: solid @width @bgColor;
+	border-top: solid (@height/2) transparent;
+	border-bottom: solid (@height/2) transparent; 
+ }
+
+
+ /** --------------------------
+ *  		TRIANGLE-RIGHT
+ *  ---------------------------
+ * <div class="triangle-right"></div>
+ **/
+ .triangle-right(
+ 	@width : 140px,
+ 	@height : 140px,
+ 	@bgColor : #6bbf20
+ 	){
+	width: 0;
+	height: 0;
+	border-left: solid @width @bgColor;
+	border-top: solid (@height/2) transparent;
+	border-bottom: solid (@height/2) transparent; 
+ }
+
+ /** --------------------------
+ *  		DIAMOND
+ *  ---------------------------
+ * <div class="diamond"></div>
+ **/
+.diamond(
+	@width : 120px,
+	@height : 120px,
+	@bgColor : #1eff00	
+	){
+	width: @width;
+	height: @height;
+	background-color: #@bgColor;
+	// Rotate
+	.rotate(-45deg);
+	// rotate origin
+	-webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+
+
+ /** --------------------------
+ *  		TRAPEZIUM
+ *  ---------------------------
+ * <div class="trapezium"></div>
+ **/
+.trapezium(
+	@width : 120px,
+	@height : 60px,
+	@bgColor : #ec3504
+	){
+	height: 0;
+	width: @width;
+	border-bottom: solid (@height*2) @bgColor;
+	border-left: solid @height @bgColor;
+	border-right: solid @height @bgColor;
+}
+
+/** --------------------------
+ *  		PARALLELOGRAM
+ *  ---------------------------
+ * <div class="parallelogram"></div>
+ **/
+.parallelogram(
+	@width : 160px,
+	@height : 100px,
+	@angle : 30deg,
+	@bgColor : #8734f7
+	){
+	height: 0;
+	width: @width;
+	background-color: #@bgColor;
+	.skew(@angle);
+}
+
+/** --------------------------
+ *  		STAR
+ *  ---------------------------
+ * <div class="star"></div>
+ **/
+.star(
+	@width: ,
+	@bgColor : #fc2e5a
+	){
+	width: 0;
+	height: 0;
+	color: @bgColor;
+	position: relative;
+	display: block;
+	border-right: 100px solid transparent;
+	border-bottom: 70px solid @bgColor;
+	border-left: 100px solid transparent;
+	.rotate(35deg);
+
+
+	&:before{
+		width: 0;
+		height: 0;
+	}
+
+	&:after{
+		width: 0;
+		height: 0;
+	}
+
+}
+
+/** --------------------------
+ *  		STAR SIX POINTS
+ *  ---------------------------
+ * <div class="star-six-points"></div>
+ **/
+ .star-six-points(
+
+ 	){
+
+ }
+
+/** --------------------------
+ *  		PENTAGON
+ *  ---------------------------
+ * <div class="pentagon"></div>
+ **/
+.pentagon(
+
+	){
+	
+	&:before{
+
+	}
+}
+
+
+/** --------------------------
+ *  		HEXAGON
+ *  ---------------------------
+ * <div class="hexagon"></div>
+ **/
+.hexagon(
+
+	){
+
+	&:before{
+
+	}
+	&:after{
+
+	}
+}
+
+/** --------------------------
+ *  		OCTAGON
+ *  ---------------------------
+ * <div class="octagon"></div>
+ **/
+.octagon(
+
+	){
+
+	&:before{
+
+	}
+	&:after{
+
+	}
+}
+
+/** --------------------------
+ *  		HEART
+ *  ---------------------------
+ * <div class="heart"></div>
+ **/
+.heart(
+
+	){
+	
+	&:before, 
+	&:after{
+
+	}
+
+	&:after{
+
+	}
+}
+
+/** --------------------------
+ *  		EGG
+ *  ---------------------------
+ * <div class="egg"></div>
+ **/
+.egg(
+
+	){
+
+}
+
+/** --------------------------
+ *  		INFINITY
+ *  ---------------------------
+ * <div class="infinity"></div>
+ **/
+.infinity(
+
+	){
+
+	&:before,
+	&:after{
+
+	}
+	&:after{
+
+	}
+}
+
+/** --------------------------
+ *  		COMMENT BUBBLE
+ *  ---------------------------
+ * <div class="comment-bubble"></div>
+ **/
+.comment-bubble(
+
+	){
+
+	&:before{
+
+	}
+
+}
+
+
+/** --------------------------
+ *  		PACMAN
+ *  ---------------------------
+ * <div class="pacman"></div>
+ **/
+.pacman(
+	@width : 140px
+	@bgColor : #ffde00
+	){
+	width: 0;
+    height: 0;
+    border-right: (@width/2) solid transparent;
+    border-top: (@width/2) solid @bgColor;
+    border-left: (@width/2) solid @bgColor;
+    border-bottom: (@width/2) solid @bgColor;
+    .border-radius(@width/2);
+}
