@@ -11,8 +11,8 @@
  * <div class="circle"></div>
  **/
  .circle(
- 	@width : 120px
-	@bgColor : #7fee1d
+ 	@width 		: 120px
+	@bgColor 	: #7fee1d
  	){
     width: @width;
     height: @width;
@@ -26,8 +26,8 @@
  * <div class="square"></div>
  **/
 .square(
-	@width : 120px,
-	@bgColor : #f447ff
+	@width 		: 120px,
+	@bgColor 	: #f447ff
 	){
 	width: @width;
 	height: @height;
@@ -40,9 +40,9 @@
  * <div class="rectangle"></div>
  **/
  .rectangle(
-	@width : 220px,
-	@height : 120px,
-	@bgColor : #4da1f7
+	@width 		: 220px,
+	@height 	: 120px,
+	@bgColor 	: #4da1f7
  	){
 	width: @width;
 	height: @height;
@@ -55,9 +55,9 @@
  * <div class="ovale"></div>
  **/
 .ovale(
-	@width : 200px,
-	@height : 100px,
-	@bgColor : #e9337c
+	@width 		: 200px,
+	@height 	: 100px,
+	@bgColor 	: #e9337c
 	){
 	width: @width;
 	height: @height;
@@ -71,9 +71,9 @@
  * <div class="triangle"></div>
  **/
  .triangle(
- 	@width : 140px,
- 	@height : 140px,
- 	@bgColor : #fcf921
+ 	@width 		: 140px,
+ 	@height 	: 140px,
+ 	@bgColor 	: #fcf921
  	){
 	width: 0;
 	height: 0;
@@ -88,9 +88,9 @@
  * <div class="triangle-down"></div>
  **/
  .triangle-down(
- 	@width : 140px,
- 	@height : 140px,
- 	@bgColor : #20a3bf
+ 	@width 		: 140px,
+ 	@height 	: 140px,
+ 	@bgColor 	: #20a3bf
  	){
 	width: 0;
 	height: 0;
@@ -106,9 +106,9 @@
  * <div class="triangle-left"></div>
  **/
  .triangle-left(
- 	@width : 140px,
- 	@height : 140px,
- 	@bgColor : #6bbf20
+ 	@width 		: 140px,
+ 	@height 	: 140px,
+ 	@bgColor 	: #6bbf20
  	){
 	width: 0;
 	height: 0;
@@ -124,9 +124,9 @@
  * <div class="triangle-right"></div>
  **/
  .triangle-right(
- 	@width : 140px,
- 	@height : 140px,
- 	@bgColor : #6bbf20
+ 	@width 		: 140px,
+ 	@height 	: 140px,
+ 	@bgColor 	: #6bbf20
  	){
 	width: 0;
 	height: 0;
@@ -141,13 +141,13 @@
  * <div class="diamond"></div>
  **/
 .diamond(
-	@width : 120px,
-	@height : 120px,
-	@bgColor : #1eff00	
+	@width 		: 120px,
+	@height 	: 120px,
+	@bgColor 	: #1eff00	
 	){
 	width: @width;
 	height: @height;
-	background-color: #@bgColor;
+	background-color: @bgColor;
 	// Rotate
 	.rotate(-45deg);
 	// rotate origin
@@ -165,9 +165,9 @@
  * <div class="trapezium"></div>
  **/
 .trapezium(
-	@width : 120px,
-	@height : 60px,
-	@bgColor : #ec3504
+	@width 		: 120px,
+	@height 	: 60px,
+	@bgColor 	: #ec3504
 	){
 	height: 0;
 	width: @width;
@@ -182,14 +182,14 @@
  * <div class="parallelogram"></div>
  **/
 .parallelogram(
-	@width : 160px,
-	@height : 100px,
-	@angle : 30deg,
-	@bgColor : #8734f7
+	@width 		: 160px,
+	@height 	: 100px,
+	@angle 		: 30deg,
+	@bgColor 	: #8734f7
 	){
 	height: 0;
 	width: @width;
-	background-color: #@bgColor;
+	background-color: @bgColor;
 	.skew(@angle);
 }
 
@@ -199,17 +199,17 @@
  * <div class="star"></div>
  **/
 .star(
-	@width: ,
-	@bgColor : #fc2e5a
+	@width 		: 87px,
+	@bgColor 	: #fc2e5a
 	){
 	width: 0;
 	height: 0;
 	color: @bgColor;
 	position: relative;
 	display: block;
-	border-right: 100px solid transparent;
-	border-bottom: 70px solid @bgColor;
-	border-left: 100px solid transparent;
+	border-right: (0.5*@width*sin(72deg)) solid transparent;
+	border-bottom: (@width*cos(72deg)) solid @bgColor;
+	border-left: (0.5*@width*sin(72deg)) solid transparent;
 	.rotate(35deg);
 
 
@@ -420,7 +420,7 @@
 	@width 			: 140px,
 	@height 		: 100px,
 	@borderRadius 	: 12px,
-	@bgColor 			: #088cb7
+	@bgColor 		: #088cb7
 
 	){
 	width: @width;
