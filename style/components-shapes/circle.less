@@ -1,0 +1,18 @@
+
+
+/** --------------------------
+ *  		CIRCLE
+ *  ---------------------------
+ * <div class="shape-circle"></div>
+ **/
+ .circle(
+ 	@width 		: 120px,
+	@bgColor 	: #7fee1d
+ 	){
+    width: @width;
+    height: @width;
+    background-color: @bgColor;
+    .border-radius(@width);
+    display: inline-block;
+    vertical-align: middle;
+}

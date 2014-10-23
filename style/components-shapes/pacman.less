@@ -1,0 +1,21 @@
+
+
+/** --------------------------
+ *  		PACMAN
+ *  ---------------------------
+ * <div class="pacman"></div>
+ **/
+.pacman(
+	@width : 140px,
+	@bgColor : #ffde00
+	){
+	width: 0;
+    height: 0;
+    border-right: (@width/2) solid transparent;
+    border-top: (@width/2) solid @bgColor;
+    border-left: (@width/2) solid @bgColor;
+    border-bottom: (@width/2) solid @bgColor;
+    display: inline-block;
+    vertical-align: middle;
+    .border-radius(@width/2);
+}

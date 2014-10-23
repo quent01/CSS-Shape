@@ -1,0 +1,22 @@
+
+
+
+ /** --------------------------
+ *  		DIAMOND
+ *  ---------------------------
+ * <div class="shape-diamond"></div>
+ **/
+.diamond(
+	@width 		: 120px,
+	@bgColor 	: #1eff00	
+	){
+	width: @width;
+	height: @width;
+	background-color: @bgColor;
+	@marginTop : (@width)*(sqrt(2) - 1);
+	margin: @marginTop (@marginTop/2) @marginTop 0;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	.rotation(-45deg);
+}

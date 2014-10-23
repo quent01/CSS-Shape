@@ -1,0 +1,20 @@
+
+
+
+/** --------------------------
+ *  		OVALE
+ *  ---------------------------
+ * <div class="ovale"></div>
+ **/
+.ovale(
+	@width 		: 200px,
+	@height 	: 100px,
+	@bgColor 	: #e67e22
+	){
+	width: @width;
+	height: @height;
+	background-color: @bgColor;
+	display: inline-block;
+	vertical-align: middle;
+	.border-radius( @width ~"/" @height );
+}

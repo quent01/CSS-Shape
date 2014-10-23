@@ -1,0 +1,35 @@
+
+
+/** --------------------------
+ *  		COMMENT BUBBLE
+ *  ---------------------------
+ * <div class="shape-comment-bubble"></div>
+ **/
+.comment-bubble(
+	@width 			: 140px,
+	@height 		: 100px,
+	@borderRadius 	: 12px,
+	@bgColor 		: #088cb7
+
+	){
+	width: @width;
+    height: @height;
+    background: @bgColor;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle; 
+
+    .border-radius(@borderRadius);
+
+	&:before{
+		content: '';
+	    width: 0;
+	    height: 0;
+	    right: 100%;
+	    top: (@height/2 - 13px);
+	    position: absolute;
+	    border-top: 13px solid transparent;
+	    border-right: 26px solid #088cb7;
+	    border-bottom: 13px solid transparent;
+	}
+}

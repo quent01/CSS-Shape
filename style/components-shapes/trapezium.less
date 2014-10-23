@@ -1,0 +1,20 @@
+
+
+ /** --------------------------
+ *  		TRAPEZIUM
+ *  ---------------------------
+ * <div class="trapezium"></div>
+ **/
+.trapezium(
+	@width 		: 120px,
+	@height 	: 60px,
+	@bgColor 	: #34495e
+	){
+	height: 0;
+	width: @width;
+	border-bottom: solid (@height*2) @bgColor;
+	border-left: solid @height transparent;
+	border-right: solid @height transparent;
+	display: inline-block;
+	vertical-align: middle;
+}

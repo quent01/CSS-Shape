@@ -1,0 +1,20 @@
+
+
+/** --------------------------
+ *  		PARALLELOGRAM
+ *  ---------------------------
+ * <div class="parallelogram"></div>
+ **/
+.parallelogram(
+	@width 		: 160px,
+	@height 	: 100px,
+	@angle 		: 30deg,
+	@bgColor 	: #8734f7
+	){
+	height: @height;
+	width: @width;
+	background-color: @bgColor;
+	.skew(@angle);
+	display: inline-block;
+	vertical-align: middle;
+}

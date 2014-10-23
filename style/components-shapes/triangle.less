@@ -1,0 +1,80 @@
+
+
+
+ /** --------------------------
+ *  		TRIANGLE
+ *  ---------------------------
+ * <div class="shape-triangle-up"></div>
+ **/
+ .triangle-up(
+ 	@width 		: 140px,
+ 	@height 	: 140px,
+ 	@bgColor 	: #fcf921
+ 	){
+	width: 0;
+	height: 0;
+	border-bottom: solid @height @bgColor;
+	border-right: solid (@width/2) transparent;
+	border-left: solid (@width/2) transparent; 
+	display: inline-block;
+	vertical-align: middle;
+ }
+
+ /** --------------------------
+ *  		TRIANGLE-DOWN
+ *  ---------------------------
+ * <div class="shape-triangle-down"></div>
+ **/
+ .triangle-down(
+ 	@width 		: 140px,
+ 	@height 	: 140px,
+ 	@bgColor 	: #fcf921
+ 	){
+	width: 0;
+	height: 0;
+	border-top: solid @height @bgColor;
+	border-right: solid (@width/2) transparent;
+	border-left: solid (@width/2) transparent; 
+	display: inline-block;
+	vertical-align: middle;
+ }
+
+
+ /** --------------------------
+ *  		TRIANGLE-LEFT
+ *  ---------------------------
+ * <div class="shape-triangle-left"></div>
+ **/
+ .triangle-left(
+ 	@width 		: 140px,
+ 	@height 	: 140px,
+ 	@bgColor 	: #fcf921
+ 	){
+	width: 0;
+	height: 0;
+	border-right: solid @width @bgColor;
+	border-top: solid (@height/2) transparent;
+	border-bottom: solid (@height/2) transparent; 
+	display: inline-block;
+	vertical-align: middle;
+ }
+
+
+ /** --------------------------
+ *  		TRIANGLE-RIGHT
+ *  ---------------------------
+ * <div class="shape-triangle-right"></div>
+ **/
+ .triangle-right(
+ 	@width 		: 140px,
+ 	@height 	: 140px,
+ 	@bgColor 	: #fcf921
+ 	){
+	width: 0;
+	height: 0;
+	border-left: solid @width @bgColor;
+	border-top: solid (@height/2) transparent;
+	border-bottom: solid (@height/2) transparent; 
+	display: inline-block;
+	vertical-align: middle;
+ }

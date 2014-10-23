@@ -1,0 +1,36 @@
+
+
+/** --------------------------
+ *  		INFINITY
+ *  ---------------------------
+ * <div class="shape-infinity"></div>
+ **/
+.infinity(
+	@width 	:100px, 
+	@color 	:#06c999
+	){
+		@size:@width/2.12;
+		display: inline-block;
+		vertical-align: middle;
+	    position: relative;
+	    width: @width;
+	    height: @size;
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: @size*0.6;
+			height: @size*0.6;
+			border: @size*0.2 solid @color;
+			.border-radiuses( @size/2, @size/2, 0, @size/2 );
+			.rotation(-135deg);
+		}
+		&:after {
+			left: auto;
+			right: 0;
+			.border-radiuses( @size/2, @size/2, @size/2, 0 );
+			.rotation(-45deg);
+		}
+}

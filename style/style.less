@@ -1,0 +1,222 @@
+/** --------------------------------------------------------------------
+ *  				USEFULL LESS FILE TO BUILD SHAPE
+ *  --------------------------------------------------------------------
+ * 
+ * from : http://www.1stwebdesigner.com/css/create-different-shapes-css/
+ **/
+
+// RESET STYLE
+	body{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+	}
+
+// MIXINS
+	@import "mixins.less";
+
+// IMPORT THE SHAPES
+	@import "components-shapes/circle.less";
+	@import "components-shapes/comment-bubble.less";
+	@import "components-shapes/diamond.less";
+	@import "components-shapes/heart.less";
+	@import "components-shapes/infinity.less";
+	@import "components-shapes/ovale.less";
+	@import "components-shapes/pacman.less";
+	@import "components-shapes/parallelogram.less";
+	@import "components-shapes/polygon.less";
+	@import "components-shapes/rectangle.less";
+	@import "components-shapes/square.less";
+	@import "components-shapes/star.less";
+	@import "components-shapes/trapezium.less";
+	@import "components-shapes/triangle.less";
+
+// GENERAL STYLE
+	header{
+		background-color: #34495e;
+		text-align: center;
+		color: white;
+		line-height: 80px;
+		height: 80px;
+		position: fixed;
+		width: 100%;
+		z-index: 99;
+		.drop-shadow(
+			@x-axis: 0, @y-axis: 2px, @blur: 2px, @alpha: 0.7
+		);
+		h1{
+			margin: 0;
+			text-shadow: 1px 2px 0px rgba(0,0,0,0.8);
+		}
+	}
+	section{
+		&:nth-child(1){
+			padding-top: 90px;
+		}
+		min-height : 300px;
+		line-height: 300px;
+		display: block;
+		// border:solid 1px red;
+		padding: 20px;
+		text-align: center;
+	} 
+
+// SECTIONS 
+	#section-circle{background-color: #3498db;}
+	#section-comment-bubble{background-color: #c0392b;}
+	#section-diamond{background-color: #27ae60;}
+	#section-heart{background-color: #f1c40f;}
+	#section-infinity{background-color: #c0392b;}
+	#section-ovale{background-color: #27ae60;}
+	#section-pacman{background-color: #3498db;}
+	#section-parallelogram{background-color: #f1c40f;}
+	#section-polygon{background-color: #c0392b;}
+	#section-rectangle{background-color: #27ae60;}
+	#section-square{background-color: #3498db;}
+	#section-star{background-color: #f1c40f;}
+	#section-trapezium{background-color: #c0392b;}
+	#section-triangle{background-color: #27ae60;}
+
+// SHAPES
+	.shape-circle{
+		.circle(
+			@width: 230px
+		);
+	}
+
+	.shape-comment-bubble{
+		.comment-bubble(
+			@width 			: 160px,
+			@height 		: 120px,
+			@borderRadius 	: 2px
+		);
+	}
+
+	.shape-diamond{
+		.diamond(
+			@width 		: 169px
+		);
+	}
+
+	.shape-heart{
+		.heart(
+			@width 	 : 135px, 
+		);
+	}
+
+	.shape-infinity{
+		.infinity(
+			@width 		: 229px,
+		);
+	}
+
+	.shape-ovale{
+		.ovale(
+			@width 		: 224px,
+			@height 	: 154px
+		);
+	}
+
+	.shape-pacman{
+		.pacman(
+			@width : 173px
+		);
+	}
+
+	.shape-parallelogram{
+		.parallelogram(
+			@width 		: 220px,
+			@height 	: 182px,
+			@angle 		: 30deg
+		);
+	}
+
+	.shape-pentagon{
+		.pentagon(
+			@width:200px 
+		);
+	}
+
+	.shape-hexagon{
+		.hexagon(
+			@width:200px
+		);
+	}
+
+	.shape-octogon{
+		.octogon(
+			@width : 200px,
+			@bgColor : #c0392b
+		);
+	}
+
+	.shape-rectangle{
+		.rectangle(
+		);
+	}
+
+	.shape-square{
+		.square(
+			@width : 202px
+		);
+	}
+
+	// STAR
+		.shape-star-five{
+			.star-five(
+				@width : 200px,
+				
+			);
+		}
+
+		.shape-star-six{
+			.star-six(
+				@width : 200px
+			);
+		}
+
+	// TRAPEZIUM
+	.shape-trapezium{
+		.trapezium(
+			@width 		: 170px,
+			@height 	: 86px
+		);
+	}
+	
+	// TRIANGLE
+		.shape-triangle-up{
+			.triangle-up(
+				@width 		: 140px,
+	 			@height 	: 140px
+			);		
+		}
+
+		.shape-triangle-down{
+			.triangle-down(
+				@width 		: 140px,
+	 			@height 	: 140px
+			);		
+		}
+
+		.shape-triangle-left{
+			.triangle-left(
+				@width 		: 140px,
+	 			@height 	: 140px,
+			);
+		}
+
+		.shape-triangle-right{
+			.triangle-right(
+				@width 		: 140px,
+	 			@height 	: 140px
+			);
+		}
+
+
+
+	footer{
+		background-color: #34495e;
+		text-align: center;
+		padding: 15px;
+		color: white;
+	}
