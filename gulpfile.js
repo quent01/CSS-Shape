@@ -2,11 +2,11 @@
 
 var gulp        = require('gulp');
 var less        = require('gulp-less');
+var clean 		= require('gulp-clean');
 var browserSync = require('browser-sync');
-// var reload 		= browserSync.reload;
 
 
-// Compile Style.less in css/style.css
+// Compile Style.less to css/style.css
 gulp.task('less', function () {
 	return gulp.src('./style/style.less')
     	.pipe(less())
@@ -15,6 +15,13 @@ gulp.task('less', function () {
 });
 
 
+// Clean CSS file
+gulp.task('clean', function(){
+	return gulp.src('style/css', {read: false})
+        .pipe(clean());
+});
+
+// Browser Sync server
 gulp.task('browser-sync', function(){
 	var config = {
 		files : [
@@ -39,13 +46,13 @@ gulp.task('browser-sync', function(){
 });
 
 
-// Reload all Browsers
+// Browsers Sync Reload
 gulp.task('bs-reload', function () {
     browserSync.reload();
 });
 
 
-// Watch scss AND html files, doing different things with each.
+// Watch Less and HTML files
 gulp.task('serve', ['browser-sync'], function () {
 
 	gulp.watch('./style/**/*.less', ['less']);
