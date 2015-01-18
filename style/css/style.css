@@ -1,0 +1,626 @@
+/** --------------------------------------------------------------------
+ *  				USEFULL LESS FILE TO BUILD SHAPE
+ *  --------------------------------------------------------------------
+ * 
+ * from : http://www.1stwebdesigner.com/css/create-different-shapes-css/
+ **/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/** --------------------------
+ *  		CIRCLE
+ *  ---------------------------
+ * <div class="shape-circle"></div>
+ **/
+/** --------------------------
+ *  		COMMENT BUBBLE
+ *  ---------------------------
+ * <div class="shape-comment-bubble"></div>
+ **/
+/** --------------------------
+ *  		DIAMOND
+ *  ---------------------------
+ * <div class="shape-diamond"></div>
+ **/
+/** --------------------------
+ *  		HEART
+ *  ---------------------------
+ * <div class="shape-heart"></div>
+ **/
+/** --------------------------
+ *  		INFINITY
+ *  ---------------------------
+ * <div class="shape-infinity"></div>
+ **/
+/** --------------------------
+ *  		OVALE
+ *  ---------------------------
+ * <div class="ovale"></div>
+ **/
+/** --------------------------
+ *  		PACMAN
+ *  ---------------------------
+ * <div class="pacman"></div>
+ **/
+/** --------------------------
+ *  		PARALLELOGRAM
+ *  ---------------------------
+ * <div class="parallelogram"></div>
+ **/
+/** --------------------------
+ *  		PENTAGON
+ *  ---------------------------
+ * <div class="shape-pentagon"></div>
+ **/
+/** --------------------------
+ *  		HEXAGON
+ *  ---------------------------
+ * <div class="shape-hexagon"></div>
+ **/
+/** --------------------------
+ *  		OCTAGON
+ *  ---------------------------
+ * <div class="shape-octogon"></div>
+ **/
+/** --------------------------
+ *  		RECTANGLE
+ *  ---------------------------
+ * <div class="rectangle"></div>
+ **/
+/** --------------------------
+ *  		SQUARE
+ *  ---------------------------
+ * <div class="square"></div>
+ **/
+/** --------------------------
+ *  		STAR
+ *  ---------------------------
+ * <div class="shape-star-five"></div>
+ **/
+/** --------------------------
+ *  		STAR SIX POINTS
+ *  ---------------------------
+ * <div class="shape-star-six"></div>
+ **/
+/** --------------------------
+ *  		TRAPEZIUM
+ *  ---------------------------
+ * <div class="trapezium"></div>
+ **/
+/** --------------------------
+ *  		TRIANGLE
+ *  ---------------------------
+ * <div class="shape-triangle-up"></div>
+ **/
+/** --------------------------
+ *  		TRIANGLE-DOWN
+ *  ---------------------------
+ * <div class="shape-triangle-down"></div>
+ **/
+/** --------------------------
+ *  		TRIANGLE-LEFT
+ *  ---------------------------
+ * <div class="shape-triangle-left"></div>
+ **/
+/** --------------------------
+ *  		TRIANGLE-RIGHT
+ *  ---------------------------
+ * <div class="shape-triangle-right"></div>
+ **/
+header {
+  background-color: #34495e;
+  text-align: center;
+  color: white;
+  line-height: 80px;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+}
+header h1 {
+  margin: 0;
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.8);
+}
+#main {
+  margin-top: 80px;
+}
+section {
+  position: relative;
+  min-height: 300px;
+  line-height: 300px;
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+section:nth-child(1) {
+  margin-top: 0px;
+}
+section h2 {
+  background-color: rgba(255, 255, 255, 0.4);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.shape {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+footer {
+  background-color: #34495e;
+  text-align: center;
+  padding: 15px;
+  color: #cccccc;
+}
+#section-circle {
+  background-color: #3498db;
+}
+#section-comment-bubble {
+  background-color: #c0392b;
+}
+#section-diamond {
+  background-color: #27ae60;
+}
+#section-heart {
+  background-color: #f1c40f;
+}
+#section-infinity {
+  background-color: #c0392b;
+}
+#section-ovale {
+  background-color: #27ae60;
+}
+#section-pacman {
+  background-color: #3498db;
+}
+#section-parallelogram {
+  background-color: #f1c40f;
+}
+#section-polygon {
+  background-color: #c0392b;
+}
+#section-rectangle {
+  background-color: #27ae60;
+}
+#section-square {
+  background-color: #3498db;
+}
+#section-star {
+  background-color: #f1c40f;
+}
+#section-trapezium {
+  background-color: #c0392b;
+}
+#section-triangle {
+  background-color: #27ae60;
+}
+.shape-circle {
+  width: 230px;
+  height: 230px;
+  background-color: #7fee1d;
+  -webkit-border-radius: 230px;
+  -moz-border-radius: 230px;
+  border-radius: 230px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.shape-comment-bubble {
+  width: 160px;
+  height: 120px;
+  background: #088cb7;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.shape-comment-bubble:before {
+  content: '';
+  width: 0;
+  height: 0;
+  right: 100%;
+  top: 47px;
+  position: absolute;
+  border-top: 13px solid transparent;
+  border-right: 26px solid #088cb7;
+  border-bottom: 13px solid transparent;
+}
+.shape-diamond {
+  width: 169px;
+  height: 169px;
+  background-color: #1eff00;
+  margin: 70.00209204px 35.00104602px 70.00209204px 0;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.shape-heart {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -190.91883092px;
+  margin-left: -290.52865575px;
+}
+.shape-heart:before,
+.shape-heart:after {
+  content: '';
+  width: 116.2114623px;
+  height: 190.91883092px;
+  position: absolute;
+  background-color: #e74c3c;
+  left: 116.2114623px;
+  top: 0;
+  -webkit-border-top-right-radius: 116.2114623px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 116.2114623px;
+  -moz-border-radius-topright: 116.2114623px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 116.2114623px;
+  border-top-right-radius: 116.2114623px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 116.2114623px;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -o-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+.shape-heart:after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+.shape-infinity {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 229px;
+  height: 108.01886792px;
+}
+.shape-infinity:before,
+.shape-infinity:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 64.81132075px;
+  height: 64.81132075px;
+  border: 21.60377358px solid #06c999;
+  -webkit-border-top-right-radius: 54.00943396px;
+  -webkit-border-bottom-right-radius: 54.00943396px;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 54.00943396px;
+  -moz-border-radius-topright: 54.00943396px;
+  -moz-border-radius-bottomright: 54.00943396px;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 54.00943396px;
+  border-top-right-radius: 54.00943396px;
+  border-bottom-right-radius: 54.00943396px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 54.00943396px;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+.shape-infinity:after {
+  left: auto;
+  right: 0;
+  -webkit-border-top-right-radius: 54.00943396px;
+  -webkit-border-bottom-right-radius: 54.00943396px;
+  -webkit-border-bottom-left-radius: 54.00943396px;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 54.00943396px;
+  -moz-border-radius-bottomright: 54.00943396px;
+  -moz-border-radius-bottomleft: 54.00943396px;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 54.00943396px;
+  border-bottom-right-radius: 54.00943396px;
+  border-bottom-left-radius: 54.00943396px;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.shape-ovale {
+  width: 224px;
+  height: 154px;
+  background-color: #e67e22;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-border-radius: 224px / 154px;
+  -moz-border-radius: 224px / 154px;
+  border-radius: 224px / 154px;
+}
+.shape-pacman {
+  width: 0;
+  height: 0;
+  border-right: 86.5px solid transparent;
+  border-top: 86.5px solid #ffde00;
+  border-left: 86.5px solid #ffde00;
+  border-bottom: 86.5px solid #ffde00;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-border-radius: 86.5px;
+  -moz-border-radius: 86.5px;
+  border-radius: 86.5px;
+}
+.shape-parallelogram {
+  height: 182px;
+  width: 220px;
+  background-color: #8734f7;
+  -webkit-transform: skew(30deg);
+  -moz-transform: skew(30deg);
+  -o-transform: skew(30deg);
+  -ms-transform: skew(30deg);
+  transform: skew(30deg);
+  display: inline-block;
+  vertical-align: middle;
+}
+.shape-pentagon {
+  position: relative;
+  width: 108px;
+  border-width: 100px 36px 0;
+  border-style: solid;
+  border-color: #16a085 transparent;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 70px;
+}
+.shape-pentagon:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -170px;
+  left: -36px;
+  border-width: 0 90px 70px;
+  border-style: solid;
+  border-color: transparent transparent #16a085;
+}
+.shape-hexagon {
+  width: 200px;
+  height: 110px;
+  background: #16a085;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.shape-hexagon:before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 50px solid #16a085;
+}
+.shape-hexagon:after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 50px solid #16a085;
+}
+.shape-octogon {
+  width: 200px;
+  height: 200px;
+  background: #16a085;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.shape-octogon:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 58px solid #16a085;
+  border-left: 58px solid #c0392b;
+  border-right: 58px solid #c0392b;
+  width: 84px;
+  height: 0;
+}
+.shape-octogon:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 58px solid #16a085;
+  border-left: 58px solid #c0392b;
+  border-right: 58px solid #c0392b;
+  width: 84px;
+  height: 0;
+}
+.shape-rectangle {
+  width: 220px;
+  height: 120px;
+  background-color: #4da1f7;
+  display: inline-block;
+  vertical-align: middle;
+}
+.shape-square {
+  width: 202px;
+  height: 202px;
+  background-color: #f447ff;
+  display: inline-block;
+  vertical-align: middle;
+}
+.shape-star-five {
+  margin: 50px 0;
+  position: relative;
+  display: block;
+  color: #fc2e5a;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid #fc2e5a;
+  border-left: 100px solid transparent;
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  transform: rotate(35deg);
+  display: inline-block;
+  vertical-align: middle;
+}
+.shape-star-five:before {
+  border-bottom: 80px solid #fc2e5a;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: '';
+  -webkit-transform: rotate(-35deg);
+  -moz-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+}
+.shape-star-five:after {
+  content: '';
+  position: absolute;
+  display: block;
+  color: #fc2e5a;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid #fc2e5a;
+  border-left: 100px solid transparent;
+  -webkit-transform: rotate(-70deg);
+  -moz-transform: rotate(-70deg);
+  -o-transform: rotate(-70deg);
+  -ms-transform: rotate(-70deg);
+  transform: rotate(-70deg);
+}
+.shape-star-six {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 173.20508076px solid #fc2e5a;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -57.73502692px;
+}
+.shape-star-six:after {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 173.20508076px solid #fc2e5a;
+  position: absolute;
+  content: "";
+  top: 57.73502692px;
+  left: -100px;
+}
+.shape-trapezium {
+  height: 0;
+  width: 170px;
+  border-bottom: solid 172px #34495e;
+  border-left: solid 86px transparent;
+  border-right: solid 86px transparent;
+  display: inline-block;
+  vertical-align: middle;
+}
+.shape-triangle-up {
+  width: 0;
+  height: 0;
+  border-bottom: solid 140px #fcf921;
+  border-right: solid 70px transparent;
+  border-left: solid 70px transparent;
+  display: inline-block;
+  vertical-align: middle;
+}
+.shape-triangle-down {
+  width: 0;
+  height: 0;
+  border-top: solid 140px #fcf921;
+  border-right: solid 70px transparent;
+  border-left: solid 70px transparent;
+  display: inline-block;
+  vertical-align: middle;
+}
+.shape-triangle-left {
+  width: 0;
+  height: 0;
+  border-right: solid 140px #fcf921;
+  border-top: solid 70px transparent;
+  border-bottom: solid 70px transparent;
+  display: inline-block;
+  vertical-align: middle;
+}
+.shape-triangle-right {
+  width: 0;
+  height: 0;
+  border-left: solid 140px #fcf921;
+  border-top: solid 70px transparent;
+  border-bottom: solid 70px transparent;
+  display: inline-block;
+  vertical-align: middle;
+}
